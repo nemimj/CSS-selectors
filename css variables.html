@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css variables</title>
+    <style>
+      :root {
+        --max-wdith: 1100px;
+        --primary-color: steelblue;
+        --secondary-color: skyblue;
+        --ligh-color: #f4f4f4;
+      }
+
+      h1 {
+        color: white;
+        padding: 0.5rem;
+        background-color: var(--primary-color);
+        border-bottom: 10px solid var(--secondary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Css Variables</h1>
+  </body>
+</html>
