@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box {
+        background-color: bisque;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+        /* Offset x   offset y   color */
+        box-shadow: 10px 10px teal;
+
+        /* Offset x   offset y   blur-radius color */
+        box-shadow: 10px 10px 10px teal;
+
+        /* Offset x   offset y   blur-radius spread-radius  color */
+        box-shadow: 10px 10px 10px 10px red;
+
+        /* negative values */
+        box-shadow: -5px -5px chocolate;
+
+        /* inset : offset x   offset y   color */
+        box-shadow: inset 10px 10px teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Hello world</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+          distinctio!
+        </p>
+      </div>
+      <div class="box">
+        <h1>Hello world</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+          distinctio!
+        </p>
+      </div>
+      <div class="box">
+        <h1>Hello world</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+          distinctio!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
