@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: lightblue;
+
+        /* transition-property: background;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out; */
+
+        transition: all 1s ease-in-out;
+
+        animation: anime1 2s 1s ease-in-out;
+      }
+
+      .box:hover {
+        background: lightcoral;
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+      }
+      /* @keyframes anime1 {
+        25% {
+          border-radius: 50% 0 0 0;
+        }
+        50% {
+          border-radius: 50% 50% 0 0;
+        }
+        75% {
+          border-radius: 50% 50% 50% 0;
+        }
+        100% {
+          border-radius: 100%;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
