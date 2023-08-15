@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfrom</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: lightblue;
+        transition: all 0.1s ease-in-out;
+        margin: 2rem;
+      }
+      .box1:hover {
+        transform: rotate(45deg);
+        border-radius: 50%;
+      }
+
+      .box2:hover {
+        transform: translateX(500px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1 box"></div>
+    <div class="box box2"></div>
+  </body>
+</html>
